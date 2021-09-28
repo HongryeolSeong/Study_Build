@@ -67,7 +67,7 @@ main함수 위에 등록 된다.
 4. 라이브러리를 적용할 소스 코드를 만들고, 컴파일을 거쳐 실행 파일을 만들고 실행한다.   
 ![12](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/12.png)   
 ![13](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/13.png)   
-![15](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/14.png)
+![15](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/15.png)
 
 ### 2. 동적 라이브러리 Windows - .dll, Linux - .so
 여러 프로그램이 공통적으로 필요로 하는 기능들을 프로그램과 분리하여 필요할 때에만 불러내어 쓸 수 있게 만들어 놓은 것.
@@ -79,3 +79,38 @@ main함수 위에 등록 된다.
 #### 단점
 1. 필요한 때에 참조가 필요하기에 속도가 느리고 성능이 낮아질 수 있다.
 2. 실행 파일 배포시 라이브러리도 함께 배포해야 한다.
+
+#### 라이브러리 생성 및 적용
+##### 1. Windows
+1. 라이브러리의 소스 코드를 작성한다.   
+![16](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/16.png)
+2. 빌드하여 .dll과 .lib(정적 라이브러리의 .lib과 다르다)을 생성한다.   
+![17](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/17.png)
+3. 라이브러리를 적용할 프로젝트를 만들고, 디렉터리를 추가한다.   
+속성 -> 디버깅 -> 환경 에 .dll 경로 입력   
+속성 -> 링커 -> 일반 -> 추가 라이브러리 디렉터리 에 .lib 경로 입력   
+속성 -> 링커 -> 입력 -> 추가 종속성 에 .lib 파일명 입력
+4. 해당 프로젝트를 빌드 및 실행한다.   
+![18](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/18.png)   
+![19](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/19.png)
+
+<br>
+
+##### 2. Linux
+1. 라이브러리의 소스 코드를 작성한다.   
+![20](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/20.png)
+2. 목적 파일을 생성한다.   
+![21](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/21.png)   
+![22](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/22.png)
+3. 동적 라이브러리 파일을 생성한다.   
+![23](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/23.png)   
+![24](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/24.png)
+4. 라이브러리 경로에 라이브러리를 추가한다.
+![25](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/25.png)   
+위 처럼 해도 되고, /usr/lib 디렉토리에 .so를 복사해도 된다(안될시 둘 다 할 것).
+5. 라이브러리를 적용할 소스 코드를 만들고, 컴파일을 거쳐 실행 파일을 만들고 실행한다.   
+![26](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/26.png)   
+![27](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/27.png)   
+![14](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/14.png)
+
+<br>
