@@ -42,30 +42,32 @@ main함수 위에 등록 된다.
 #### 라이브러리 생성 및 적용
 ##### 1. Windows
 1. 라이브러리의 헤더파일과 소스 코드를 작성한다.   
-![1]() ![2]()
+![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/1.png) ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/2.png)
 2. 빌드하여 .lib을 생성한다.   
-![3]()
+![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/3.png)
 3. 라이브러리를 적용할 프로젝트를 만들고, 디렉터리를 추가한다.   
 속성 -> C/C++ -> 일반 -> 추가 포함 디렉터리 에 헤더파일 경로 입력   
 속성 -> 링커 -> 일반 -> 추가 라이브러리 디렉터리 에 라이브러리 경로 입력   
 속성 -> 링커 -> 입력 -> 추가 종속성 에 라이브러리 파일명 입력
 4. 해당 프로젝트를 빌드 및 실행한다.   
-![4]() ![5]()
+![4](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/4.png)   
+![5](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/5.png)
+
+<br>
 
 ##### 2. Linux
 1. 라이브러리의 헤더파일과 소스 코드를 작성한다.   
-![6]()   
-![7]()
+![6](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/6.png) ![7](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/7.png)
 2. 목적 파일을 생성한다.   
-![8]()   
-![9]()
+![8](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/8.png)   
+![9](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/9.png)
 3. 정적 라이브러리 파일을 생성한다.   
-![10]()   
-![11]()
+![10](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/10.png)   
+![11](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/11.png)
 4. 라이브러리를 적용할 소스 코드를 만들고, 컴파일을 거쳐 실행 파일을 만들고 실행한다.   
-![12]()   
-![13]()   
-![14]()
+![12](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/12.png)   
+![13](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/13.png)   
+![15](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/14.png)
 
 ### 2. 동적 라이브러리 Windows - .dll, Linux - .so
 여러 프로그램이 공통적으로 필요로 하는 기능들을 프로그램과 분리하여 필요할 때에만 불러내어 쓸 수 있게 만들어 놓은 것.
