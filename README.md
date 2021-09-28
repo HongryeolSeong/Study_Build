@@ -46,7 +46,7 @@ main함수 위에 등록 된다.
 1. 라이브러리의 헤더파일과 소스 코드를 작성한다.   
 ![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/1.png) ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/2.png)
 2. 빌드하여 .lib을 생성한다.   
-![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/3.png)
+![28](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/28.png)
 3. 라이브러리를 적용할 프로젝트를 만들고, 디렉터리를 추가한다.   
 속성 -> C/C++ -> 일반 -> 추가 포함 디렉터리 에 헤더파일 경로 입력   
 속성 -> 링커 -> 일반 -> 추가 라이브러리 디렉터리 에 라이브러리 경로 입력   
