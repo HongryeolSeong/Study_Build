@@ -27,6 +27,8 @@ main함수 위에 등록 된다.
 자주 사용되는 특정한 기능을 main 함수에서 분리시켜 놓음으로써,   
 프로그램을 유지, 디버깅을 쉽게하고 컴파일 시간을 좀더 빠르게 할 수 있다.
 
+<br>
+
 ### 1. 정적 라이브러리 Windows - .lib, Linux - .a
 ---
 컴파일시 적재돼서 실행 파일에 라이브러리의 내용이 모두 들어간다.   
@@ -69,7 +71,10 @@ main함수 위에 등록 된다.
 ![13](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/13.png)   
 ![15](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/15.png)
 
+<br>
+
 ### 2. 동적 라이브러리 Windows - .dll, Linux - .so
+---
 여러 프로그램이 공통적으로 필요로 하는 기능들을 프로그램과 분리하여 필요할 때에만 불러내어 쓸 수 있게 만들어 놓은 것.
 
 #### 장점
