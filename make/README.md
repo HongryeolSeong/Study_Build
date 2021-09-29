@@ -94,6 +94,30 @@ clean:
 
 <br>
 
+## 패턴
+실제 프로젝트에서 사용될 수십, 수백개의 소스코드를 다루기 위해서   
+특정 조건에 부합하는 파일들에 대해 간단하게 recipe를 작성하게 도와준다.
+<br>
+
+예를들어
+```
+foo.o: foo.c foo.h
+    $(CC) $(CFLAGS) -c foo.c
+    
+bar.o: bar.c bar.h
+    $(CC) $(CFLAGS) -c bar.c
+```
+를
+```
+%.o: %.c %.h
+    $(CC) $(CFLAGS) -c $<
+```
+로 바꿀 수 있다.
+<br>
+
+%.o는 모든 .o를 타겟으로 지정하는 것이고,   
+만약 foo.o가 타겟이라면 Dependencies 부분의 %.c와 %.h는 foo.c와 foo.h가 된다.
+
 ## 예제
 ![ex](https://www.tuwlab.com/files/attach/images/2382/193/027/7e9501d245506aae63834478c8b28917.png)   
 
