@@ -151,6 +151,9 @@ Recipe = Target을 make할 때 실행되는 명령어
 ### 내장 규칙
 자주 사용되는 빌드 규칙들은 내장을 해서 굳이 기술하지 않아도 자동으로 처리된다.   
 소스 파일(.c)을 컴파일해서 Object 파일(.o)로 만들어 주는 규칙이 여기에 해당.   
+
+<br>
+
 다음과 같이 적용 가능하다.   
 ![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m1.png)  ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)
 
@@ -159,6 +162,9 @@ Makefile 내 변수 지정이 가능하다.
 ```
 CC = gcc
 ```
+
+<br>
+
 다음과 같이 사용 가능하다.   
 ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)  ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)   
 
@@ -174,7 +180,7 @@ clean:
 ```
 .PHONY: clean
 ```
-적용시 다음과 같다.
+적용시 다음과 같다.   
 ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)  ![9](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m9.png)   
 
 ### 예제
