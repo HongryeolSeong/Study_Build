@@ -3,7 +3,7 @@
 
 <br>
 
-## 프로그램 동작 순서
+# 프로그램 동작 순서
 ![순서](https://t1.daumcdn.net/cfile/tistory/99E473355EC0FF5A07)
 
 ### 전처리
@@ -25,14 +25,13 @@ main함수 위에 등록 된다.
 
 <br>
 
-## 라이브러리
+# 라이브러리
 자주 사용되는 특정한 기능을 main 함수에서 분리시켜 놓음으로써,   
 프로그램을 유지, 디버깅을 쉽게하고 컴파일 시간을 좀더 빠르게 할 수 있다.
 
 <br>
 
-### 1. 정적 라이브러리 Windows - .lib, Linux - .a
----
+## 1. 정적 라이브러리 Windows - .lib, Linux - .a
 컴파일시 적재돼서 실행 파일에 라이브러리의 내용이 모두 들어간다.   
 
 #### 장점
@@ -43,8 +42,8 @@ main함수 위에 등록 된다.
 1. 같은 코드를 가진 여러 프로그램 실행시 메모리가 낭비된다.
 2. 라이브러리 수정시 적용된 프로그램을 다시 재배포해야한다.
 
-#### 라이브러리 생성 및 적용
-##### 1. Windows
+### 라이브러리 생성 및 적용
+#### 1. Windows
 1. 라이브러리의 헤더파일과 소스 코드를 작성한다.   
 ![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/1.png) ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/2.png)
 2. 빌드하여 .lib을 생성한다.   
@@ -59,7 +58,7 @@ main함수 위에 등록 된다.
 
 <br>
 
-##### 2. Linux
+#### 2. Linux
 1. 라이브러리의 헤더파일과 소스 코드를 작성한다.   
 ![6](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/6.png) ![7](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/7.png)
 2. 목적 파일을 생성한다.   
@@ -75,8 +74,7 @@ main함수 위에 등록 된다.
 
 <br>
 
-### 2. 동적 라이브러리 Windows - .dll, Linux - .so
----
+## 2. 동적 라이브러리 Windows - .dll, Linux - .so
 여러 프로그램이 공통적으로 필요로 하는 기능들을 프로그램과 분리하여 필요할 때에만 불러내어 쓸 수 있게 만들어 놓은 것.
 
 #### 장점
@@ -87,8 +85,8 @@ main함수 위에 등록 된다.
 1. 필요할 때마다 라이브러리가 메모리에 로드되어서 속도가 느리고 성능이 낮아질 수 있다.
 2. 실행 파일 배포시 라이브러리도 함께 배포해야 한다.
 
-#### 라이브러리 생성 및 적용
-##### 1. Windows
+### 라이브러리 생성 및 적용
+#### 1. Windows
 1. 라이브러리의 소스 코드를 작성한다.   
 ![16](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/16.png)
 2. 빌드하여 .dll과 .lib(정적 라이브러리의 .lib과 다르다)을 생성한다.   
@@ -103,7 +101,7 @@ main함수 위에 등록 된다.
 
 <br>
 
-##### 2. Linux
+#### 2. Linux
 1. 라이브러리의 소스 코드를 작성한다.   
 ![20](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/20.png)
 2. 목적 파일을 생성한다.   
@@ -122,15 +120,14 @@ main함수 위에 등록 된다.
 
 <br>
 
-## Makefile을 이용한 빌드
+# Makefile을 이용한 빌드
 리눅스 환경에서 실행 파일을 만들시(IDE없이) 대상 소스코드들이 많을 경우,   
 컴파일 시간이 오래걸리고 매번 명령어 입력하기 힘들어진다.   
 -> Makefile을 이용하여 make 명령어 한 번으로 컴파일을 가능하게 한다.
 
 <br>
 
-### Incremental build
----
+## Incremental build
 명령어들을 모아 놓은 쉘 스크립트를 이용한 빌드와 다른 성격의 빌드.   
 1. make 명령 시 목적 파일과 소스 코드의 마지막 수정 시간을 비교한다.
 2. 목적 코드의 수정시간이 더 나중이다. -> 컴파일 하지 않는다.
@@ -141,8 +138,7 @@ main함수 위에 등록 된다.
 
 <br>
 
-### Makefile의 기본 형식
----
+## Makefile의 기본 형식
 ```
 Target: Dependencies   
 (탭)Recipe   
@@ -156,8 +152,7 @@ Recipe = Target을 make할 때 실행되는 명령어
 
 <br>
 
-### 내장 규칙
----
+## 내장 규칙
 자주 사용되는 빌드 규칙들은 내장을 해서 굳이 기술하지 않아도 자동으로 처리된다.   
 소스 파일(.c)을 컴파일해서 Object 파일(.o)로 만들어 주는 규칙이 여기에 해당.   
 
@@ -168,8 +163,7 @@ Recipe = Target을 make할 때 실행되는 명령어
 
 <br>
 
-### 변수 사용
----
+## 변수 사용
 Makefile 내 변수 지정이 가능하다.   
 ```
 CC = gcc
@@ -182,8 +176,7 @@ CC = gcc
 
 <br>
 
-### clean 및 PHONY
----
+## clean 및 PHONY
 clean을 이용하여 상황에 따라 목적 파일 및 실행 파일 삭제가 가능하다.
 ```
 clean:
@@ -200,17 +193,20 @@ clean:
 
 <br>
 
-### 예제
----
+## 예제
 ![ex](https://www.tuwlab.com/files/attach/images/2382/193/027/7e9501d245506aae63834478c8b28917.png)   
 
 ![4](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m4.png)   
 ![5](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m5.png)  ![6](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m6.png)   
 ![7](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m7.png)  ![8](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m8.png)   
 
+<br>
+
 위 파일들을 컴파일 및 링크하여 실행 파일 app.out을 만든다.   
 이용할 Makefile은 다음과 같다.   
 ![9](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m9.png)   
+
+<br>
 
 make하고 실행 파일을 실행시킨 결과이다.   
 ![10](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m10.png)
