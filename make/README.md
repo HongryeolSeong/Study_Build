@@ -73,7 +73,7 @@ $(CC) -c foo.c //gcc -c foo.c
 <br>
 
 다음과 같이  가능하다.   
-![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)  ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)   
+![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m1.png)  ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)   
 
 <br>
 
