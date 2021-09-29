@@ -121,3 +121,8 @@ main함수 위에 등록 된다.
 ![14](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/14.png)
 
 <br>
+
+## Makefile을 이용한 빌드
+리눅스 환경에서 실행 파일을 만들시(IDE없이) 대상 소스코드들이 많을 경우,   
+컴파일 시간이 오래걸리고 매번 명령어 입력하기 힘들어진다.   
+-> Makefile을 이용하여 make 명령어 한 번으로 컴파일을 가능하게 한다.
