@@ -209,4 +209,4 @@ clean:
 <br>
 
 make하고 실행 파일을 실행시킨 결과이다.   
-![10](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m10.png)
+![11](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m10.png)  ![10](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m10.png)
