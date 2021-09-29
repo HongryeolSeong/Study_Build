@@ -128,6 +128,7 @@ main함수 위에 등록 된다.
 -> Makefile을 이용하여 make 명령어 한 번으로 컴파일을 가능하게 한다.
 
 ### Incremental build
+---
 명령어들을 모아 놓은 쉘 스크립트를 이용한 빌드와 다른 성격의 빌드.   
 1. make 명령 시 목적 파일과 소스 코드의 마지막 수정 시간을 비교한다.
 2. 목적 코드의 수정시간이 더 나중이다. -> 컴파일 하지 않는다.
@@ -137,6 +138,7 @@ main함수 위에 등록 된다.
 -> 파일 하나만 바뀌어도 전체 파일을 컴파일하는 쉘 스크립트와 달리 빠르게 빌드가 가능하다.
 
 ### Makefile의 기본 형식
+---
 ```
 Target: Dependencies   
 (탭)Recipe   
@@ -149,6 +151,7 @@ Dependencies = Target을 make할 때 필요한 파일 목록
 Recipe = Target을 make할 때 실행되는 명령어   
 
 ### 내장 규칙
+---
 자주 사용되는 빌드 규칙들은 내장을 해서 굳이 기술하지 않아도 자동으로 처리된다.   
 소스 파일(.c)을 컴파일해서 Object 파일(.o)로 만들어 주는 규칙이 여기에 해당.   
 
@@ -158,6 +161,7 @@ Recipe = Target을 make할 때 실행되는 명령어
 ![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m1.png)  ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)
 
 ### 변수 사용
+---
 Makefile 내 변수 지정이 가능하다.   
 ```
 CC = gcc
@@ -169,6 +173,7 @@ CC = gcc
 ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)  ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)   
 
 ### clean 및 PHONY
+---
 clean을 이용하여 상황에 따라 목적 파일 및 실행 파일 삭제가 가능하다.
 ```
 clean:
