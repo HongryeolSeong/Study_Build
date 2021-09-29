@@ -67,7 +67,7 @@ CC = gcc
 ```
 사용시
 ```
-gcc -c foo.c => $(CC) -c foo.c
+$(CC) -c foo.c //gcc -c foo.c
 ```
 
 <br>
