@@ -4,11 +4,11 @@
 <br>
 
 # 프로그램 빌드 및 라이브러리
-![링크 👈](https://github.com/HongryeolSeong/Study_Build/tree/main/lib)
+[링크 👈](https://github.com/HongryeolSeong/Study_Build/tree/main/lib)
 
 <br>
 
 # Makefile을 이용한 빌드
-![링크 👈](https://github.com/HongryeolSeong/Study_Build/tree/main/make)
+[링크 👈](https://github.com/HongryeolSeong/Study_Build/tree/main/make)
 
 <br>
