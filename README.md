@@ -127,6 +127,8 @@ main함수 위에 등록 된다.
 컴파일 시간이 오래걸리고 매번 명령어 입력하기 힘들어진다.   
 -> Makefile을 이용하여 make 명령어 한 번으로 컴파일을 가능하게 한다.
 
+<br>
+
 ### Incremental build
 ---
 명령어들을 모아 놓은 쉘 스크립트를 이용한 빌드와 다른 성격의 빌드.   
@@ -136,6 +138,8 @@ main함수 위에 등록 된다.
 
 소스코드 수정 시 빌드 과정에서 변경된 소스코드에 의존성이 있는 대상들만 추려서 빌드한다.   
 -> 파일 하나만 바뀌어도 전체 파일을 컴파일하는 쉘 스크립트와 달리 빠르게 빌드가 가능하다.
+
+<br>
 
 ### Makefile의 기본 형식
 ---
@@ -150,6 +154,8 @@ Target = 만들고자하는 파일
 Dependencies = Target을 make할 때 필요한 파일 목록   
 Recipe = Target을 make할 때 실행되는 명령어   
 
+<br>
+
 ### 내장 규칙
 ---
 자주 사용되는 빌드 규칙들은 내장을 해서 굳이 기술하지 않아도 자동으로 처리된다.   
@@ -159,6 +165,8 @@ Recipe = Target을 make할 때 실행되는 명령어
 
 다음과 같이 적용 가능하다.   
 ![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m1.png)  ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)
+
+<br>
 
 ### 변수 사용
 ---
@@ -171,6 +179,8 @@ CC = gcc
 
 다음과 같이 사용 가능하다.   
 ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)  ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)   
+
+<br>
 
 ### clean 및 PHONY
 ---
@@ -187,6 +197,8 @@ clean:
 ```
 적용시 다음과 같다.   
 ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)  ![9](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m9.png)   
+
+<br>
 
 ### 예제
 ---
