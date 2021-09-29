@@ -152,7 +152,7 @@ Recipe = Target을 make할 때 실행되는 명령어
 자주 사용되는 빌드 규칙들은 내장을 해서 굳이 기술하지 않아도 자동으로 처리된다.   
 소스 파일(.c)을 컴파일해서 Object 파일(.o)로 만들어 주는 규칙이 여기에 해당.   
 다음과 같이 적용 가능하다.   
-![1]()  ![2]()
+![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m1.png)  ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)
 
 ### 변수 사용
 Makefile 내 변수 지정이 가능하다.   
@@ -160,7 +160,7 @@ Makefile 내 변수 지정이 가능하다.
 CC = gcc
 ```
 다음과 같이 사용 가능하다.   
-![2]()  ![3]()   
+![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m2.png)  ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)   
 
 ### clean 및 PHONY
 clean을 이용하여 상황에 따라 목적 파일 및 실행 파일 삭제가 가능하다.
@@ -175,19 +175,19 @@ clean:
 .PHONY: clean
 ```
 적용시 다음과 같다.
-![3]()  ![9]()   
+![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)  ![9](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m9.png)   
 
 ### 예제
 ---
 ![ex](https://www.tuwlab.com/files/attach/images/2382/193/027/7e9501d245506aae63834478c8b28917.png)   
 
-![4]()   
-![5]()  ![6]()   
-![7]()  ![8]()   
+![4](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m4.png)   
+![5](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m5.png)  ![6](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m6.png)   
+![7](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m7.png)  ![8](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m8.png)   
 
 위 파일들을 컴파일 및 링크하여 실행 파일 app.out을 만든다.   
 이용할 Makefile은 다음과 같다.   
-![9]()   
+![9](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m9.png)   
 
 make하고 실행 파일을 실행시킨 결과이다.   
-![10]()
+![10](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m10.png)
