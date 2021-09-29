@@ -143,6 +143,12 @@ main함수 위에 등록 된다.
 Target: Dependencies   
 (탭)Recipe   
 ```
+Target = 만들고자하는 파일   
+Dependencies = Target을 make할 때 필요한 파일 목록   
+Recipe = Target을 make할 때 실행되는 명령어   
+
+<br>
+
 전체적인 통상 패턴은 다음과 같다.
 ```
 CC=<컴파일러>
@@ -161,11 +167,6 @@ clean:
 $(TARGET): $(OBJS)
 $(CC) -o $@ $(OBJS)
 ```
-<br>
-
-Target = 만들고자하는 파일   
-Dependencies = Target을 make할 때 필요한 파일 목록   
-Recipe = Target을 make할 때 실행되는 명령어   
 
 <br>
 
