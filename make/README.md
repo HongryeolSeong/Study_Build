@@ -78,19 +78,26 @@ $(CC) -c foo.c //gcc -c foo.c
 <br>
 
 ## clean 및 PHONY
-clean을 이용하여 상황에 따라 목적 파일 및 실행 파일 삭제가 가능하다.
+clean을 이용하여 상황에 따라 빌드업 결과 파일 삭제가 가능하다.
 ```
 clean:
-  rm -f *.o
-  rm -f $(TARGET)
+  rm -f *.o       // 모든 목적 파일 삭제
+  rm -f $(TARGET) // 생성된 타겟 파일 
 ```
 만약 디렉터리 내에 clean이라는 이름의 파일이 있는 경우, 위의 명령이 실행 되지 않는다.   
 이 상황을 방지하기 위해 다음 코드를 넣는다.   
 ```
 .PHONY: clean
 ```
-적용시 다음과 같다.   
-![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3.png)  ![9](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m9.png)   
+<br>
+
+makefile에 다음의 코드를 하단에 넣는다.
+```
+.PHONY: clean
+clean:
+  rm -f *.o
+  rm -f $(TARGET)
+```
 
 <br>
 
