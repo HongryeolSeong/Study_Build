@@ -44,7 +44,7 @@ clean:
     rm -f $(TARGET)
  
 $(TARGET): $(OBJS)
-$(CC) -o $@ $(OBJS)
+    $(CC) -o $@ $(OBJS)
 ```
 
 <br>
