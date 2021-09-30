@@ -136,13 +136,11 @@ bar.o: bar.c bar.h
 ## 예제
 ![ex](https://www.tuwlab.com/files/attach/images/2382/193/027/7e9501d245506aae63834478c8b28917.png)   
 
-![4](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m4.png)   
-![5](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m5.png)  ![6](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m6.png)   
-![7](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m7.png)  ![8](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m8.png)   
-
+![6](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m6.png)  ![8](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m8.png)   
+![5](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m5.png)  ![7](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m7.png)  ![4](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m4.png)   
+위 파일들을 컴파일 및 링크하여 실행 파일 app.out을 만든다.   
 <br>
 
-위 파일들을 컴파일 및 링크하여 실행 파일 app.out을 만든다.   
 이용할 Makefile은 다음과 같다.   
 ![9](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m12.png)   
 
