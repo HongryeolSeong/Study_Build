@@ -65,14 +65,14 @@ Makefile 내 변수 지정이 가능하다.
 ```
 CC = gcc
 ```
-사용시
+변수 사용시
 ```
 $(CC) -c foo.c //gcc -c foo.c
 ```
 
 <br>
 
-다음과 같이  가능하다.   
+다음과 같이 적용 가능하다.   
 ![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m1.png)  ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/m3n.png)   
 
 <br>
