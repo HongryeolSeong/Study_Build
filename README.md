@@ -6,3 +6,6 @@
 
 ## 2. Makefile을 이용한 빌드
 [링크 👈](https://github.com/HongryeolSeong/Study_Build/tree/main/make)
+
+## 3. 빌드의 유형
+[링크 👈](https://github.com/HongryeolSeong/Study_Build/tree/main/mod)
