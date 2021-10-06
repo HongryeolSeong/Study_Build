@@ -49,5 +49,7 @@ app_01은 다음과 같이 gdb 디버거를 통해 디버깅이 가능하다.
 ## 3. 출력파일 정리
 일반적으로 출력파일(.exe, .lib)은 다음과 같이 정리한다.   
 ![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o1.png)   
+   ㅣ   
 ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o2.png)   
+   ㅣ   
 ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o3.png)
