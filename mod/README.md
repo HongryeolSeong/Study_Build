@@ -55,3 +55,4 @@ app_01은 다음과 같이 gdb 디버거를 통해 디버깅이 가능하다.
 ![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o2.png)   
    ㅣ   
 ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o3.png)
+<br>
