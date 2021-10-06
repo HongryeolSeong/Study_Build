@@ -45,3 +45,9 @@ app_01은 다음과 같이 gdb 디버거를 통해 디버깅이 가능하다.
 다음처럼 파일 크기가 차이나는 것을 볼 수 있다(app_01: 디버그 모드, app_02: 릴리즈 모드).   
 ![4](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/n4.png)
 <br>
+
+## 3. 출력파일 정리
+일반적으로 출력파일(.exe, .lib)은 다음과 같이 정리한다.
+![1](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o1.png)   
+![2](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o2.png)   
+![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o3.png)
