@@ -58,3 +58,20 @@ app_01은 다음과 같이 gdb 디버거를 통해 디버깅이 가능하다.
 ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o3.png) ![3](https://github.com/HongryeolSeong/Study_Build/blob/main/refimg/o3.png) 
 <br>
 <br>
+
+## Visual Studio 컴파일러와 비교한 gcc 컴파일러
+리눅스에서의 빌드와 동일하게 Visual Studio에서의 빌드 역시 여러 옵션을 이용하여 진행된다.
+
+#### 최적화
+리눅스에서는 $ gcc -O 형식으로 빌드시 최적화를 하게되는데,   
+Visual Studio에서는 프로젝트속성 - 구성속성 - C/C++ - 최적화 탭에 보면   
+/Od, /O1, /O2, /Ox 옵션을 볼 수 있다. 뒤로 갈 수록 최적화 수준이 높아진다.
+
+#### 경고 메세지 수준
+리눅스에서의 $ gcc -Wall 을 이용한 경고 수준 설정은   
+Visual Studio에서 프로젝트속성 - 구성속성 - C/C++ - 일반 에 경고 수준 탭에서 설정 가능하다.   
+/W0, /W1, /W2, /W3, /W4, /Wall이 있고, 뒤로 갈 수록 경고 메시지의 수준이 높아진다.
+
+#### 옵션 확인
+프로젝트속성 - 구성속성 - C/C++ - 명령줄 을 확인해보면   
+빌드시 적용되는 전체 옵션들을 확인할 수 있다.
